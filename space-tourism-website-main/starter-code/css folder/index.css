@@ -1,0 +1,69 @@
+body {
+    background-image: url("/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;}
+
+
+nav {
+    margin-right: -10px;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    float: right;
+    backdrop-filter: blur(17px);
+    background: #a6a4a408;
+    width: 100%;
+    max-width: 960px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    height: fit-content;
+    margin-left:-5%;
+}
+
+nav div span {
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+nav div:hover {
+    border-bottom: 1px solid white;
+}
+
+nav div {
+    display: inherit;
+    height: 100px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+section {
+    float: left;
+}
+
+
+.menu {
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+section img {
+    margin-left: 40px;
+}
