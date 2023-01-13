@@ -30,15 +30,26 @@ nav div span {
     margin-right: 5px;
 }
 
-nav div:hover {
-    border-bottom: 1px solid white;
+nav  div:hover {
+    border-bottom: 1px solid #979797;
+    cursor: pointer;
 }
 
-nav div {
+nav  div {
     display: inherit;
     height: 100px;
     margin-right: 50px;
     align-items: center;
+}
+
+nav a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    border-bottom: 1px solid white;
 }
 
 section {
