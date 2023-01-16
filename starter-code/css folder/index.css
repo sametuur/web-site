@@ -1,15 +1,13 @@
-body {
-    background-image: url("/starter-code/assets/home/background-home-desktop.jpg");
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
 
+* {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;
+}
 
 nav {
     margin-right: -10px;
-    font-family: Barlow Condensed;
     font-size: 16px;
     letter-spacing: 2.7px;
     float: right;
@@ -22,7 +20,7 @@ nav {
     justify-content: center;
     text-transform: uppercase;
     height: fit-content;
-    margin-left:-5%;
+    margin-left: -5%;
 }
 
 nav div span {
@@ -30,25 +28,26 @@ nav div span {
     margin-right: 5px;
 }
 
-nav  div:hover {
+nav div:hover {
     border-bottom: 1px solid #979797;
     cursor: pointer;
 }
 
-nav  div {
+nav div {
+    font-family: 'Barlow Condensed' !important;
     display: inherit;
     height: 100px;
     margin-right: 50px;
     align-items: center;
 }
 
-nav a{
+nav a {
     display: flex;
     color: white;
     text-decoration: none;
 }
 
-.active{
+.active {
     border-bottom: 1px solid white;
 }
 
@@ -58,14 +57,14 @@ section {
 
 
 .menu {
-    margin-top:50px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
 }
 
-.line{
+.line {
     width: 100%;
     height: 1px;
     background-color: grey;
@@ -87,64 +86,166 @@ span.sub-text {
     font-size: 18px;
     line-height: 32px;
     margin-top: 30px;
-    
-    
+
+
     color: #D0D6F9;
-    }
-    
-    span.hero-text {
-        font-family: 'Bellefair';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 150px;
-        line-height: 172px;
-        color: #FFFFFF;
-    }
-    
-    span.top-text {
-        font-family: 'Barlow Condensed';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 34px;
-        letter-spacing: 4.725px;
-        color: #D0D6F9;
-        margin-bottom: 30px;
+}
 
-    }
+span.hero-text {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+    color: #FFFFFF;
+}
+
+span.top-text {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #D0D6F9;
+    margin-bottom: 30px;
+
+}
 
 
-    .hero-all {
-        display: flex;
-        justify-content: space-evenly;
-        height: 650px;
-        align-items: flex-end;
-    }
-    
-    
-    .hero-right {
-        font-family: 'Bellefair';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 37px;
-        letter-spacing: 2px;
-        color: #0B0D17;
-        background: white;
-        display: grid;
-        align-items: center;
-        width: 274px;
-        height: 274px;
-        text-align: center;
-        border-radius: 50%;
-        transition: 1s;
-    }
+.hero-all {
+    display: flex;
+    justify-content: space-evenly;
+    height: 650px;
+    align-items: flex-end;
+}
 
-    .hero-left-inner {
-        display: grid;
-        width: 380px;
-        text-align: justify;
-    }
-    .hero-right:hover {
-        box-shadow: 0px 0px 0px 70px #ffffff54;
-    }
+
+.hero-right {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    background: white;
+    display: grid;
+    align-items: center;
+    width: 274px;
+    height: 274px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.hero-left-inner {
+    display: grid;
+    width: 380px;
+    text-align: justify;
+}
+
+.hero-right:hover {
+    box-shadow: 0px 0px 0px 70px #ffffff54;
+}
+
+
+
+section.destination {
+    display: flex;
+    justify-items: center;
+    height: 650px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+    width: 100%;
+}
+
+.hero-bottom-all {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-right-destination {
+    width: 445px;
+    height: 472px;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-top {
+    display: flex;
+    color: white;
+    position: relative;
+    left: 22%;
+    bottom: 5%;
+    gap: 15px;
+}
+
+.hero-top-text {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-black {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #686868;
+    mix-blend-mode: normal;
+}
+
+ul.tab-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: -30px;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+ul.tab-section li {
+    list-style-type: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
+
+.hero-text-moon {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 115px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+}
+
+.moon-text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
